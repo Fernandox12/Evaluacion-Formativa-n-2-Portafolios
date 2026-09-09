@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 70px 20px;
+    background: #222;
+    color: white;
+}
+
+header a {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+section {
+    padding: 40px 10%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Botones */
+
+a, button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+a:hover, button:hover {
+    background: #222;
+}
+
+/* Tarjetas */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.tarjetas div {
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #bbb;
+}
+
+.tarjetas div:hover {
+    transform: scale(1,03);
+}
+
+/* Galería */
+
+.galeria {
+    display: flex;
+    gap:15px;
+}
+
+.galeria img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition:transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px #888;
+}
+
+/* Tabla */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #999;
+}
+
+th {
+    background: #4f46e5;
+    color:white;
+}
+
+/* Formulario */
+input, textarea {
+    display:block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.boton {
+    margin-right: 10px;
+}
+
+/* Pie de página */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #222;
+    color: white;
+}
